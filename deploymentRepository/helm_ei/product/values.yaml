@@ -26,8 +26,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 0.5Gi, cpu: 500m}
-        limits: {memory: 0.5Gi, cpu: 500m}
+        requests: {memory: 1Gi, cpu: 1000m}
+        limits: {memory: 1Gi, cpu: 1000m}
       imagePullPolicy: Always
     wso2eiAnalyticsWorker2:
       imageName: wso2ei-analytics-worker
@@ -39,8 +39,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 0.5Gi, cpu: 500m}
-        limits: {memory: 0.5Gi, cpu: 500m}
+        requests: {memory: 1Gi, cpu: 1000m}
+        limits: {memory: 1Gi, cpu: 1000m}
       imagePullPolicy: Always
     wso2eiAnalyticsDashbaord:
       imageName: wso2ei-analytics-dashboard
@@ -52,8 +52,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 0.5Gi, cpu: 500m}
-        limits: {memory: 0.5Gi, cpu: 500m}
+        requests: {memory: 1Gi, cpu: 1000m}
+        limits: {memory: 1Gi, cpu: 1000m}
       imagePullPolicy: Always
   centralizedLogging:
     enabled: false
