@@ -56,7 +56,7 @@ wso2:
         limits: {memory: 0.5Gi, cpu: 500m}
       imagePullPolicy: Always
   centralizedLogging:
-    enabled: false
+    enabled: true
     logstash:
       imageTag: 7.2.0
       elasticsearch: {host: search-testgrid-dev-uyzu33zahmcxtuhjzcti76lc2m.us-east-1.es.amazonaws.com,
