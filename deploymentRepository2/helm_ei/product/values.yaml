@@ -59,8 +59,11 @@ wso2:
     enabled: true
     logstash:
       imageTag: 7.2.0
-      elasticsearch: {host: search-testgrid-dev-uyzu33zahmcxtuhjzcti76lc2m.us-east-1.es.amazonaws.com,
-        username: '', password: '', port: '80'}
+      elasticsearch: 
+        host: ''
+        username: ''
+        password: '' 
+        port: ''
       readinessProbe: {initialDelaySeconds: 90, periodSeconds: 30}
       livenessProbe: {initialDelaySeconds: 90, periodSeconds: 30}
   monitoring:
