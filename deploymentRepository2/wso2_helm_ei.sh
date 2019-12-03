@@ -32,7 +32,7 @@ function helm_deploy(){
 
   helmDeployment="wso2product$(cat /dev/urandom | tr -dc 'a-z0-9' | fold -w 5 | head -n 1)"
 
-  helm install $helmDeployment $deploymentRepositoryLocation/deploymentRepository/helm_ei/product/ -n $namespace
+  helm install $helmDeployment $deploymentRepositoryLocation/deploymentRepository2/helm_ei/product/ -n $namespace
 
   
 }
