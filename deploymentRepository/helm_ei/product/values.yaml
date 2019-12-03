@@ -13,8 +13,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 40, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 40, periodSeconds: 10}
       resources:
-        requests: {memory: 1Gi, cpu: 1000m}
-        limits: {memory: 1Gi, cpu: 1000m}
+        requests: {memory: 2Gi, cpu: 2000m}
+        limits: {memory: 2Gi, cpu: 2000m}
       imagePullPolicy: Always
     wso2eiAnalyticsWorker1:
       imageName: wso2ei-analytics-worker
@@ -26,8 +26,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 1Gi, cpu: 1000m}
-        limits: {memory: 1Gi, cpu: 1000m}
+        requests: {memory: 2Gi, cpu: 2000m}
+        limits: {memory: 2Gi, cpu: 2000m}
       imagePullPolicy: Always
     wso2eiAnalyticsWorker2:
       imageName: wso2ei-analytics-worker
@@ -39,8 +39,8 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 1Gi, cpu: 1000m}
-        limits: {memory: 1Gi, cpu: 1000m}
+        requests: {memory: 2Gi, cpu: 2000m}
+        limits: {memory: 2Gi, cpu: 2000m}
       imagePullPolicy: Always
     wso2eiAnalyticsDashbaord:
       imageName: wso2ei-analytics-dashboard
@@ -52,15 +52,15 @@ wso2:
       livenessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       readinessProbe: {initialDelaySeconds: 20, periodSeconds: 10}
       resources:
-        requests: {memory: 1Gi, cpu: 1000m}
-        limits: {memory: 1Gi, cpu: 1000m}
+        requests: {memory: 2Gi, cpu: 2000m}
+        limits: {memory: 2Gi, cpu: 2000m}
       imagePullPolicy: Always
   centralizedLogging:
     enabled: false
     logstash:
       imageTag: 7.2.0
-      elasticsearch: {host: search-testgrid-dev-uyzu33zahmcxtuhjzcti76lc2m.us-east-1.es.amazonaws.com,
-        username: '', password: '', port: '80'}
+      elasticsearch: {host: "",
+        username: "", password: "", port: ""}
       readinessProbe: {initialDelaySeconds: 90, periodSeconds: 30}
       livenessProbe: {initialDelaySeconds: 90, periodSeconds: 30}
   monitoring:
