@@ -10,8 +10,8 @@ wso2:
       minReadySeconds: 75
       strategy:
         rollingUpdate: {maxSurge: 1, maxUnavailable: 0}
-      livenessProbe: {initialDelaySeconds: 40, periodSeconds: 10}
-      readinessProbe: {initialDelaySeconds: 40, periodSeconds: 10}
+      livenessProbe: {initialDelaySeconds: 100, periodSeconds: 10}
+      readinessProbe: {initialDelaySeconds: 100, periodSeconds: 10}
       resources:
         requests: {memory: 1Gi, cpu: 1000m}
         limits: {memory: 1Gi, cpu: 1000m}
